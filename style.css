@@ -1,5 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* root */
+:root {
+    /* colors */
+  --clr-main: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  --clr-secondary: #4ec5f7;
+
+  --bg-footer: #0b0223;
+  --bg-nav-box: rgba(11, 2, 35, 0.10);
+
+  --text-header: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  --text-main: #534c64;
+  --text-nav: #3c354f;
+  --text-games: #0b0223;
+}
+
+/* Global classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
