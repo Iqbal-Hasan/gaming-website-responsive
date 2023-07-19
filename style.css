@@ -32,12 +32,13 @@ a {
   max-width: 1440px;
 }
 button {
-  padding: 15px 30px;
+  padding: 20px 40px;
   font-size: 1.6rem;
   color: white;
   border: none;
-  border-radius: 40px;
+  border-radius: 50px;
   font-weight: bold;
+  cursor: pointer;
 }
 h2 {
   font-size: 4.5rem;
@@ -111,9 +112,6 @@ h2 {
 .div {
   background-color: #faf7fd;
 }
-.left-img {
-  position: relative;
-}
 .banner-left {
   display: flex;
   align-items: center;
@@ -148,12 +146,8 @@ h2 {
 }
 /* ? gamer style ------------------------- */
 .gamer {
-  /* background: linear-gradient(
-    90deg,
-    rgba(255, 66, 165, 0.03) 0%,
-    rgba(255, 66, 165, 0.03) 100%
-  ); */
   background: white;
+  margin: 100px 0px;
 }
 .both-div {
   display: grid;
@@ -178,12 +172,13 @@ h2 {
 /* ? online games funny video style ------------------------- */
 .online-games {
   text-align: center;
+  margin-bottom: 100px;
 }
 .online-games > h2 > .text {
   color: #3c354f;
 }
 .online-games > p {
-  margin: 10px 0;
+  margin: 10px 0px 70px 0px;
 }
 .img-cards {
   display: grid;
@@ -261,7 +256,7 @@ h2 {
 
 /* ? games list section ------------------------- */
 .main {
-  padding: 70px 0px;
+  padding: 100px 0px;
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
@@ -352,10 +347,31 @@ footer {
     text-align: center;
   }
 }
+@media screen and (max-width: 1024px) {
+  .normal_text {
+    font-size: 4rem;
+  }
+  .gradient_text {
+    font-size: 8.2rem;
+  }
+  .logo_text {
+    font-size: 3rem;
+  }
+  .img > img {
+    width: 80px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .navigation {
     flex-direction: column;
     gap: 20px;
+  }
+  .section-title,
+  h2 {
+    font-size: 4.3rem;
+  }
+  .section-description {
+    font-size: 1.6rem;
   }
   .nav_right,
   .nav_text {
@@ -427,5 +443,27 @@ footer {
   }
   .g-list .games-img > img {
     width: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .normal_text {
+    font-size: 3rem;
+  }
+  .gradient_text {
+    font-size: 6.2rem;
+  }
+  .btn {
+    flex-direction: column;
+  }
+  .gamer,
+  .online-games,
+  .main {
+    margin: 40px 0px 20px 0px;
+  }
+  .section-title,h2{
+    font-size: 4rem;
   }
 }
