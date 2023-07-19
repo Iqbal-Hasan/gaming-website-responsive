@@ -236,34 +236,29 @@ h2 {
 }
 /* ? play instantly section ------------------------- */
 .both-side {
-  display: grid;
-  gap: 200px;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin: 100px 0px 200px 0px;
+  margin-bottom: 100px;
+  text-align: right;
 }
-.both-side:nth-child(1) {
+.game-content:first-child {
   flex-basis: 40%;
 }
-.both-side:nth-child(2) {
+.game-content:last-child {
   flex-basis: 50%;
 }
-.play-text > h2 {
-  text-align: right;
-}
-.play-text > P {
-  text-align: right;
-  margin: 15px 0px;
-}
-.first-img {
-  position: relative;
-}
-.second-img {
+.small-img {
+  max-width: 50%;
   position: absolute;
-  width: 250px;
-  top: 60%;
-  right: 70%;
+  left: 0;
+  bottom: 0;
 }
+.img-side {
+  position: relative;
+  padding: 0px 0 64px 94px;
+}
+
 /* ? games list section ------------------------- */
 .main {
   padding: 70px 0px;
@@ -345,26 +340,16 @@ footer {
   margin-bottom: 50px;
 }
 .website-link ul li a,
-.copyright{
+.copyright {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.6rem;
 }
 
 /* ? responsive ---------------------------- */
 @media screen and (max-width: 1050px) {
-  .both-side {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
-  }
   .play-text > h2,
   p {
     text-align: center;
-  }
-  .second-img {
-    position: absolute;
-    width: 300px;
-    top: 70%;
-    right: 25%;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -398,13 +383,16 @@ footer {
     text-align: center;
   }
 }
+@media screen and (max-width: 992px) {
+  .both-side {
+    gap: 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .img-cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .second-img {
-    max-width: 250px;
-    right: 20%;
   }
 }
 @media screen and (max-width: 425px) {
