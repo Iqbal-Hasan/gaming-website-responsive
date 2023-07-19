@@ -230,12 +230,52 @@ h2 {
     #022b5ea6
   );
 }
-.game-caption{
+.game-caption {
   text-align: left;
   margin-top: 24px;
 }
+/* ? play instantly section ------------------------- */
+.both-side {
+  display: grid;
+  gap: 200px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 100px 0px;
+}
+.play-text > h2,
+p {
+  text-align: right;
+}
+.play-text > P {
+  margin: 15px 0px;
+}
+.first-img {
+  position: relative;
+}
+.second-img {
+  position: absolute;
+  width: 250px;
+  top: 60%;
+  right: 70%;
+}
 
 /* ? responsive ---------------------------- */
+@media screen and (max-width: 1050px) {
+  .both-side {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .play-text > h2,
+  p {
+    text-align: center;
+  }
+  .second-img {
+    position: absolute;
+    width: 300px;
+    top: 70%;
+    right: 25%;
+  }
+}
 @media screen and (max-width: 1000px) {
   .navigation {
     flex-direction: column;
@@ -268,9 +308,14 @@ h2 {
   }
 }
 @media screen and (max-width: 768px) {
-.img-cards {
-  grid-template-columns: repeat(2, 1fr);
-}
+  .img-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-img {
+    max-width: 250px;
+    right: 20%;
+
+  }
 }
 @media screen and (max-width: 425px) {
   .container {
@@ -286,8 +331,6 @@ h2 {
     font-size: 8rem;
   }
   .img-cards {
-  grid-template-columns: repeat(1, 1fr);
-}
-}
-@media screen and (max-width: 320px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
