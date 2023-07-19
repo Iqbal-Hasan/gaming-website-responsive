@@ -30,13 +30,27 @@ a {
   width: 80%;
   margin: 0 auto;
 }
-button{
+button {
   padding: 15px 30px;
   font-size: 1.6rem;
   color: white;
   border: none;
   border-radius: 40px;
   font-weight: bold;
+}
+.section-title {
+  font-size: 4.5rem;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-description {
+  color: #534c64;
+  font-size: 1.8rem;
+}
+.margin-tb {
+  margin: 20px 0px;
 }
 
 /* ? header style --------------------------------------------------------------*/
@@ -109,22 +123,50 @@ button{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.list{
+.list {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
   align-items: center;
   color: #3c354f;
 }
-.btn{
+.btn {
   display: flex;
   gap: 30px;
 }
-.btn-primary{
-background-color: #f948b2;
+.btn-primary {
+  background-color: #f948b2;
 }
-.btn-secondary{
-  background-color: #4EC5F7;
+.btn-secondary {
+  background-color: #4ec5f7;
+}
+/* ? gamer style ------------------------- */
+.gamer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.both-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  padding: 50px 0;
+}
+.gamer_right {
+  text-align: right;
+}
+.quote {
+  color: #484257;
+}
+.quote > p {
+  font-size: 2rem;
+}
+.quote > h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 /* ? responsive ---------------------------- */
@@ -145,25 +187,31 @@ background-color: #f948b2;
     box-shadow: none;
   }
   .banner {
-  grid-template-columns: 1fr;
-  grid-gap: 0px;
-}
-.banner-left {
-  justify-content: center;
-  padding: 100px 0;
-}
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+  .banner-left {
+    justify-content: center;
+    padding: 100px 0;
+  }
+  .both-div{
+    grid-template-columns: 1fr;
+  }
+  .gamer_right{
+    text-align: center;
+  }
 }
 @media screen and (max-width: 425px) {
   .container {
     width: 95%;
   }
   .banner-left {
-  background-position: left;
-}
-.normal_text {
-  font-size: 4rem;
-}
-.gradient_text{
-  font-size: 8rem;
-}
+    background-position: left;
+  }
+  .normal_text {
+    font-size: 4rem;
+  }
+  .gradient_text {
+    font-size: 8rem;
+  }
 }
