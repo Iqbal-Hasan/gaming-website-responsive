@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 .container {
-  margin: 20px 50px 0px 50px;
+  margin: 20px 10px 0px 10px;
 }
 .clr-main {
   background: var(--clr-main);
@@ -60,11 +60,11 @@ a {
 .header_logo .logo_text {
   font-size: 4.4rem;
 }
-ul li a{
+ul li a {
   font-size: 1.8rem;
   color: var(--text-nav);
 }
-.nav_text{
+.nav_text {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ ul li a{
 .nav_box li a img {
   width: 3rem;
 }
-.nav_box{
+.nav_box {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -83,4 +83,43 @@ ul li a{
   background-color: var(--bg-nav-box);
   padding: 10px 20px;
   border-radius: 7px;
+}
+
+/* responsive style */
+@media screen and (min-width: 768px) {
+  .full-width {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  }
+  .container {
+    margin: 0px 30px 0px 30px;
+    padding: 10px 0;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_right {
+    display: flex;
+    align-items: center;
+  }
+  .nav_text {
+    flex-direction: row;
+    margin-right: 20px;
+  }
+  .nav_box {
+    padding: 0px 20px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .nav_text {
+    gap: 40px;
+    margin-right: 40px;
+  }
 }
