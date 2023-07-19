@@ -57,8 +57,9 @@ h2 {
 .margin-tb {
   margin: 20px 0px;
 }
+/* -------- X -------- */
 
-/* ? header style --------------------------------------------------------------*/
+/* header style */
 .full-width {
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -100,7 +101,9 @@ h2 {
 .nav_right div li a {
   color: #3c354f;
 }
-/* ? banner style ------------------------- */
+/* -------- X -------- */
+
+/* banner style */
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,7 +147,9 @@ h2 {
 .btn-secondary {
   background-color: #4ec5f7;
 }
-/* ? gamer style ------------------------- */
+/* -------- X -------- */
+
+/* gamer style */
 .gamer {
   background: white;
   margin: 100px 0px;
@@ -169,7 +174,9 @@ h2 {
   font-size: 2.4rem;
   font-weight: bold;
 }
-/* ? online games funny video style ------------------------- */
+/* -------- X -------- */
+
+/* online games funny video style */
 .online-games {
   text-align: center;
   margin-bottom: 100px;
@@ -229,7 +236,9 @@ h2 {
   text-align: left;
   margin-top: 24px;
 }
-/* ? play instantly section ------------------------- */
+/* -------- X -------- */
+
+/* play instantly section */
 .both-side {
   display: flex;
   justify-content: space-between;
@@ -253,8 +262,9 @@ h2 {
   position: relative;
   padding: 0px 0 64px 94px;
 }
+/* -------- X -------- */
 
-/* ? games list section ------------------------- */
+/* fames list section */
 .main {
   padding: 100px 0px;
   background: linear-gradient(
@@ -287,8 +297,9 @@ h2 {
 .g-list .games-img > img {
   width: 50px;
 }
+/* -------- X -------- */
 
-/* ? footer section --------------- */
+/* footer section */
 footer {
   background-color: #0b0223;
   color: white;
@@ -339,8 +350,9 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.6rem;
 }
+/* -------- X -------- */
 
-/* ? responsive ---------------------------- */
+/* responsive style */
 @media screen and (max-width: 1050px) {
   .play-text > h2,
   p {
@@ -467,3 +479,4 @@ footer {
     font-size: 4rem;
   }
 }
+/* -------- X -------- */
